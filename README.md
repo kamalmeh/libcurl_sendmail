@@ -1,21 +1,22 @@
+<H1>
 curlmail - libcurl utility to send mail through smtp ssl/tls
+</H1>
 
-Requirements:
-	Ubuntu/Dabian:
-		sudo apt install libcurl4-gnutls-dev
-	Fedora/RedHat:
-		sudo dnf install libcurl-devel
+<h1>Requirements</h1>
+	<h2>Ubuntu/Dabian:</h2><br>
+		<ul><li>sudo apt install libcurl4-gnutls-dev</li></ul>
+	<h2>Fedora/RedHat:</h2><br>
+		<ul><li>sudo dnf install libcurl-devel</li></ul>
 
-Compilation:
-	Option1: make
-	
-	Option2: gcc -o mSend mSend.c -lcurl
-
+<h1>Compilation</h1>
+	<ul>
+	<li>Option1: make</li>	
+	<li>Option2: gcc -o curlmail curlmail.c -lcurl </li>
 	if Option2 does not work then try below option
+	<li>Option3: `curl-config --cc --cflags` -o curlmail curlmail.c `curl-config --libs`</li>
+	</ul>
 
-	Option3: `curl-config --cc --cflags` -o mSend mSend.c `curl-config --libs`
-
-Execution:
+<h1>Execution:</h1>
 
 	1. Below will be completely non-interactive because we have given all parameters on command line.
 	
